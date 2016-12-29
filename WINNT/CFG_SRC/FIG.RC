@@ -1,0 +1,174 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\fig.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_IPREAD_DIALOG DIALOGEX 0, 0, 265, 178
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Set Up IP Address"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_IPADDR_1,20,40,20,16,WS_GROUP
+    EDITTEXT        IDC_IPADDR_2,40,40,20,16
+    EDITTEXT        IDC_IPADDR_3,60,40,20,16
+    EDITTEXT        IDC_IPADDR_4,80,40,20,16,0,WS_EX_RIGHT
+    EDITTEXT        ID_X121ADDR,110,40,69,16,WS_GROUP
+    PUSHBUTTON      "&Add",IDC_BTN_ADD,200,35,35,14
+    LISTBOX         IDC_LIST,20,90,160,50,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Delete",IDC_BTN_DELETE,200,95,35,15
+    PUSHBUTTON      "&OK",ID_MYOK,40,155,40,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,135,155,40,14
+    GROUPBOX        "New IP Address",IDC_STATIC,10,13,235,47
+    LTEXT           "IP Address",IDC_STATIC,35,25,36,8
+    LTEXT           "X121 Address",IDC_STATIC,115,25,46,8
+    GROUPBOX        "IP Address List",IDC_STATIC,10,65,235,80
+    LTEXT           "IP Address",IDC_STATIC,30,80,35,8
+    LTEXT           "X121 Address",IDC_STATIC,110,80,45,10
+END
+
+IDD_HUI_DIALOG DIALOGEX 0, 0, 289, 143
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Setup For NIC Driver "
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "INT",IDC_LINKCLK,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    64,15,28,14
+    CONTROL         "EXT",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,130,15,29,
+                    15
+    CONTROL         "DTE",IDC_WORKMODE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,65,50,31,10
+    CONTROL         "DCE",IDC_RADIO11,"Button",BS_AUTORADIOBUTTON,130,50,31,
+                    10
+    CONTROL         "9600",IDC_BAUDRATE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,35,86,35,10
+    CONTROL         "19200",IDC_RADIO7,"Button",BS_AUTORADIOBUTTON,75,86,35,
+                    10
+    CONTROL         "38400",IDC_RADIO8,"Button",BS_AUTORADIOBUTTON,120,86,35,
+                    10
+    CONTROL         "64K",IDC_RADIO9,"Button",BS_AUTORADIOBUTTON,160,86,35,
+                    10
+    EDITTEXT        IDC_X121ADDR,85,115,75,13,ES_AUTOHSCROLL | WS_GROUP
+    DEFPUSHBUTTON   "&OK",IDOK,225,10,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,225,40,50,14
+    PUSHBUTTON      "&Advanced",ID_ADVANCED,225,80,50,14
+    LTEXT           "X121 ADDRESS:",IDC_STATIC,15,117,59,9
+    GROUPBOX        "Baud Rate (bps)",IDC_STATIC,15,70,185,32
+    GROUPBOX        "Link Clock",IDC_STATIC,15,8,185,25
+    GROUPBOX        "Work Mode",IDC_STATIC,15,40,185,25
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_IPREAD_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 258
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+
+    IDD_HUI_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 279
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 126
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\fig.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

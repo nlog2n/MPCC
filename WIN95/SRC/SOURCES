@@ -1,0 +1,21 @@
+TARGETNAME=mpcc
+TARGETPATH=$(BASEDIR)\lib
+TARGETTYPE=DRIVER
+
+TARGETLIBS=$(BASEDIR)\lib\*\$(DDKBUILDENV)\ndis.lib
+
+C_DEFINES=$(C_DEFINES) -DNDIS_MINIPORT_DRIVER -DMPCC
+
+DRIVER_ALIGNMENT=0x200
+
+INCLUDES=..\inc
+
+SOURCES=debug.c         \
+        interrup.c      \
+        func.c          \
+        receive.c       \
+        mpccsend.c      \
+        channel.c       \
+        card.c          \
+        mpcc.c          \
+        ne2000.rc
